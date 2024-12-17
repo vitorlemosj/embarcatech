@@ -3,8 +3,8 @@
 void menu() {
     printf("Escolha a unidade de comprimento de origem:\n");
     printf("1. Metro (m)\n");
-    printf("2. Centímetro (cm)\n");
-    printf("3. Milímetro (mm)\n");
+    printf("2. Centimetro (cm)\n");
+    printf("3. Milimetro (mm)\n");
 }
 
 double converter(double valor, int origem, int destino) {
@@ -19,7 +19,7 @@ double converter(double valor, int origem, int destino) {
         case 3: metros = valor / 1000; 
             break;
         default:
-            printf("Unidade de origem inválida.\n");
+            printf("Unidade de origem invalida.\n");
             return -1;
     }
 
@@ -32,7 +32,7 @@ double converter(double valor, int origem, int destino) {
         case 3: 
             return metros * 1000;
         default:
-            printf("Unidade de destino inválida.\n");
+            printf("Unidade de destino invalida.\n");
             return -1;
     }
 }
@@ -44,10 +44,10 @@ int main() {
     // Exibe o menu para o usuário escolher as unidades
     menu();
 
-    printf("Digite o número da unidade de origem: ");
+    printf("Digite o numero da unidade de origem: ");
     scanf("%d", &origem);
     
-    printf("Digite o número da unidade de destino: ");
+    printf("Digite o numero da unidade de destino: ");
     scanf("%d", &destino);
     
     printf("Digite o valor a ser convertido: ");

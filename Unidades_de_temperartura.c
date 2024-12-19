@@ -1,7 +1,14 @@
 #include <stdio.h>
 
-void menu2();
+void temp();//Função principal
+void menu2();//Menu de escolha
 void select2(int A);
+//Conversão de unidades
+float CtoF(float C);
+float CtoK(float C);
+float FtoC(float F);
+float KtoC(float K);
+
 
 void temp()
 {

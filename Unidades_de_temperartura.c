@@ -18,6 +18,24 @@ void menu2() {
     printf("3 - Kelvin \n\n");
 }
 
+//Converte Celsius para Fahrenheit
+float CtoF(float C){
+    return (C * 9.0 / 5.0 + 32);
+}
+//Converte Celsius para Kevin
+float CtoK(float C){
+    return (C + 273.15);
+}
+//Converte Fahrenheit para Celsius
+float FtoC(float F){
+    return ((F - 32) * 5.0 / 9.0);
+}
+//Converte Kevin para Celsius
+float KtoC(float K){
+ return (K - 273.15);
+}
+
+
 void select2(int A){
     float F, C, K;
     switch (A)
@@ -25,8 +43,8 @@ void select2(int A){
     case 1:
         printf("Digite o valor da temperatura em Celsius: ");
         scanf("%f", &C);
-        F = C * 9.0 / 5.0 + 32;
-        K = C + 273.15;
+        F = CtoF(C);
+        K = CtoK(C);
         printf("Resultado: \n");
         printf("Celcius -- Fahrenheit -- Kelvin \n");
         printf("%.2f °C -- %.2f °F -- %.2f K\n", C, F, K);
@@ -34,8 +52,8 @@ void select2(int A){
     case 2:
         printf("Digite o valor da temperatura em Fahrenheit: ");
         scanf("%f", &F);
-        C = (F - 32) * 5.0 / 9.0;
-        K = C + 273.15;
+        C = FtoC(F);
+        K = CtoK(C);
         printf("Resultado: \n");
         printf("Celcius -- Fahrenheit -- Kelvin \n");
         printf("%.2f °C -- %.2f °F -- %.2f K\n", C, F, K);
@@ -44,8 +62,8 @@ void select2(int A){
     case 3:
         printf("Digite o valor da temperatura em Kelvin: ");
         scanf("%f", &K);
-        C = K - 273.15;
-        F = C * (9.0 / 5.0) + 32;
+        C = KtoC(K);
+        F = CtoF(C);
         printf("Resultado: \n");
         printf("Celcius -- Fahrenheit -- Kelvin \n");
         printf("%.2f °C -- %.2f °F -- %.2f K\n", C, F, K);

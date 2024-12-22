@@ -7,6 +7,8 @@
 #include "features/velocidade_temperatura/Unidades_de_velocidade.c"
 #include "features/comprimento/comprimento.c"
 #include "features/volume/volume.c"
+#include "features/massa/massa.c"
+
 
 //Inicie as funções aqui
 void temp();
@@ -50,7 +52,11 @@ int main()
         case 4:
             vol();
             printf("Executado com sucesso.\n\n");
-            break;    
+            break;   
+        case 5:
+            massa();  
+            printf("Executado com sucesso.\n\n");
+            break; 
         case 0:
             printf("Executado com sucesso.\n\n");
             return 0;
@@ -64,12 +70,12 @@ int main()
 
 //Adicione a sua conversão aqui
 void menu(){
-        printf("\n\n\tEscolha a conversão: \n");
-        printf("1 - Velocidade \n");
-        printf("2 - Temperatura \n");
-        printf("3 - Comprimento \n");
-        printf("4 - Volume \n");
-        printf("0 - Para Sair \n\n");
+    printf("\n\n\tEscolha a conversão: \n");
+    printf("1 - Velocidade \n");
+    printf("2 - Temperatura \n");
+    printf("3 - Comprimento \n");
+    printf("4 - Volume \n");
+    printf("5 - Massa \n"); 
+    printf("0 - Para Sair \n\n");
 }
-
 //Este é apenas um modelo, segestões para melhorias podem ser feitas na parte issues no Github

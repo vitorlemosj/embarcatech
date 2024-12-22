@@ -1,6 +1,15 @@
 #include <stdio.h>
 
-void converter(double val, int entrada, int saida) {
+void vol() {
+    printf("Conversor de Unidades de Volume\n");
+    printf("Escolha a unidade de entrada:\n");
+    printf("1. Litros\n");
+    printf("2. Mililitros\n");
+    printf("3. Metros cúbicos\n");
+    printf("Sua escolha (1-3): ");
+}
+
+void conversor(double val, int entrada, int saida) { //conversor
     double result;
 
     if (entrada == 1 && saida == 2) {
@@ -26,16 +35,12 @@ void converter(double val, int entrada, int saida) {
     }
 }
 
-int main() {
+int seletor() { //main
     int entrada, saida;
     double val;
 
-    printf("Conversor de Unidades de Volume\n");
-    printf("Escolha a unidade de entrada:\n");
-    printf("1. Litros\n");
-    printf("2. Mililitros\n");
-    printf("3. Metros cúbicos\n");
-    printf("Sua escolha (1-3): ");
+    vol();
+
     scanf("%d", &entrada);
 
     if (entrada < 1 || entrada > 3) {
@@ -63,7 +68,7 @@ int main() {
         return 0;
     }
 
-    converter(val, entrada, saida);
+    conversor(val, entrada, saida);
 
     return 0;
 }

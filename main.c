@@ -1,15 +1,22 @@
+
+//Os comentarios aqui tem a função de ajudar a manter o padrão do código para futuras branches
 #include <stdio.h>
 #include <stdlib.h>
+//Faça uma pasta com a nova funcionalidade e adicione o código aqui
 #include "features/velocidade_temperatura/Unidades_de_temperartura.c"
 #include "features/velocidade_temperatura/Unidades_de_velocidade.c"
 #include "features/comprimento/comprimento.c"
 #include "features/volume/volume.c"
 
+//Inicie as funções aqui
 void temp();
 void vel();
 void comp();
 void menu();
+int seletor();
 
+
+//A função principal consiste em um menu.
 int main()
 {
     system("chcp 65001>null"); // Para utilizar acentos no print
@@ -21,6 +28,13 @@ int main()
 
         switch (A)
         {
+        /*Adcione mais case para adicionar sua nova funcionalidade
+        O padrão consiste em:
+
+        função desenvolvida
+        printf("Executado com sucesso.\n\n");
+        break;*/
+        
         case 1:
             vel();
             printf("Executado com sucesso.\n\n");
@@ -47,6 +61,8 @@ int main()
     }
 }
 
+
+//Adicione a sua conversão aqui
 void menu(){
         printf("\n\n\tEscolha a conversão: \n");
         printf("1 - Velocidade \n");
@@ -55,3 +71,5 @@ void menu(){
         printf("4 - Volume \n");
         printf("0 - Para Sair \n\n");
 }
+
+//Este é apenas um modelo, segestões para melhorias podem ser feitas na parte issues no Github

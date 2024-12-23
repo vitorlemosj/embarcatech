@@ -1,62 +1,60 @@
 #include <stdio.h>
 
-void menu() {
-    printf("Escolha a unidade de comprimento de origem:\n");
+void sel2();//Menu de escolha
+void comp();//Função principal
+void conv(int origem);
+
+void comp() {
+    int origem = 0;
+    sel2();
+    scanf("%d", &origem);
+    conv(origem);
+}
+
+void sel2() {
+    printf("Escolha a unidade de comprimento:\n");
     printf("1. Metro (m)\n");
     printf("2. Centimetro (cm)\n");
     printf("3. Milimetro (mm)\n");
 }
 
-double converter(double valor, int origem, int destino) {
-    double metros;
 
+void conv(int origem) { //conversor 
+    float metros,centimetros ,milimetros;
     // Converte a unidade de origem para metros
     switch (origem) {
-        case 1: metros = valor; 
-            break; 
-        case 2: metros = valor / 100; 
-            break; 
-        case 3: metros = valor / 1000; 
+         case 1:
+            // Entrada em metros
+            printf("Digite o valor em Metro: ");
+            scanf("%f", &metros);
+            centimetros = metros * 100;
+            milimetros = metros * 1000;
+            printf("Metro -- Centimetro -- Milimetro \n");
+            printf("%.2f m -- %.2f cm -- %.2f mm\n", metros, centimetros, milimetros);
             break;
-        default:
-            printf("Unidade de origem invalida.\n");
-            return -1;
-    }
+        
+        case 2:
+            // Entrada em centimetros
+            printf("Digite o valor em Centimetro: ");
+            scanf("%f", &centimetros);
+            metros = centimetros / 100;
+            milimetros = centimetros * 10;
+            printf("Metro -- Centimetro -- Milimetro \n");
+            printf("%.2f m -- %.2f cm -- %.2f mm\n", metros, centimetros, milimetros);
+            break;
 
-    // Converte de metros para a unidade de destino
-    switch (destino) {
-        case 1: 
-            return metros; 
-        case 2: 
-            return metros * 100;
-        case 3: 
-            return metros * 1000;
-        default:
+        case 3:
+            // Entrada em milimetros
+            printf("Digite o valor em Milimetro: ");
+            scanf("%f", &milimetros);
+            centimetros = milimetros / 10;
+            metros = milimetros / 1000;
+            printf("Metro -- Centimetro -- Milimetro \n");
+            printf("%.2f m -- %.2f cm -- %.2f mm\n", metros, centimetros, milimetros);
+            break;
+
+            default:  
             printf("Unidade de destino invalida.\n");
-            return -1;
+            break;
     }
-}
-
-int main() {
-    double valor;
-    int origem, destino;
-
-    // Exibe o menu para o usuário escolher as unidades
-    menu();
-
-    printf("Digite o numero da unidade de origem: ");
-    scanf("%d", &origem);
-    
-    printf("Digite o numero da unidade de destino: ");
-    scanf("%d", &destino);
-    
-    printf("Digite o valor a ser convertido: ");
-    scanf("%lf", &valor);
-
-    double resultado = converter(valor, origem, destino);
-    if (resultado != -1) {
-        printf("\n%.2f unidades de origem equivale a %.2f unidades de destino.\n", valor, resultado);
-    }
-
-    return 0;
 }

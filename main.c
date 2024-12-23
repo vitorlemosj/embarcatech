@@ -45,9 +45,9 @@ int main()
             printf("Executado com sucesso.\n\n");
             break;
         case 4:
-            vol();
+            volume_seletor();
             printf("Executado com sucesso.\n\n");
-            break;   
+            break;
         case 5:
             massa();  
             printf("Executado com sucesso.\n\n");

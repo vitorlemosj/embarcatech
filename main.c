@@ -10,14 +10,8 @@
 #include "features/massa/massa.c"
 #include "features/area/area.c"
 
-
-//Inicie as funções aqui
-void temp();
-void vel();
-void comp();
 void menu();
 int seletor();
-
 
 //A função principal consiste em um menu.
 int main()

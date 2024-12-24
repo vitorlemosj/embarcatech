@@ -1,6 +1,6 @@
 ﻿## Adições Extras
 
-Adicionei um conversor de milimetros para polegadas, para o auxílio das conversões em tubulação de pvc em bombas hidráulicas e valvulas solenoides.
+Adicionei um conversor de milimetros para polegadas, para o auxílio das conversões em tubulação de pvc em bombas hidráulicas e válvulas solenoides.
 
 # embarcatech
 

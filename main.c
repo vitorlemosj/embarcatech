@@ -1,37 +1,38 @@
 
-//Os comentarios aqui tem a função de ajudar a manter o padrão do código para futuras branches
+// Os comentarios aqui tem a função de ajudar a manter o padrão do código para futuras branches
 #include <stdio.h>
 #include <stdlib.h>
-//Faça uma pasta com a nova funcionalidade e adicione o código aqui
+// Faça uma pasta com a nova funcionalidade e adicione o código aqui
 #include "features/velocidade_temperatura/Unidades_de_temperartura.c"
 #include "features/velocidade_temperatura/Unidades_de_velocidade.c"
 #include "features/comprimento/comprimento.c"
 #include "features/volume/volume.c"
 #include "features/massa/massa.c"
 #include "features/area/area.c"
+#include "features/comprimento/polegadas.c"
 
 void menu();
 int seletor();
 
-//A função principal consiste em um menu.
+// A função principal consiste em um menu.
 int main()
 {
     system("chcp 65001>null"); // Para utilizar acentos no print
     int A = 0;
     while (1)
     {
-        menu();  // Exibe o menu para o usuário escolher as unidades
+        menu(); // Exibe o menu para o usuário escolher as unidades
         scanf("%d", &A);
 
         switch (A)
         {
-        /*Adcione mais case para adicionar sua nova funcionalidade
-        O padrão consiste em:
+            /*Adcione mais case para adicionar sua nova funcionalidade
+            O padrão consiste em:
 
-        função desenvolvida
-        printf("Executado com sucesso.\n\n");
-        break;*/
-        
+            função desenvolvida
+            printf("Executado com sucesso.\n\n");
+            break;*/
+
         case 1:
             vel();
             printf("Executado com sucesso.\n\n");
@@ -47,18 +48,22 @@ int main()
         case 4:
             vol();
             printf("Executado com sucesso.\n\n");
-            break;   
+            break;
         case 5:
-            massa();  
+            massa();
             printf("Executado com sucesso.\n\n");
-            break; 
+            break;
         case 6:
-            area();  
+            area();
             printf("Executado com sucesso.\n\n");
-            break; 
+            break;
         case 0:
             printf("Executado com sucesso.\n\n");
             return 0;
+        case 99:
+            pol();
+            printf("Executado com sucesso.\n\n");
+            break;
         default:
             printf("##Valor invalido. Por favor digite novamente.## \n\n");
             break;
@@ -66,16 +71,17 @@ int main()
     }
 }
 
-
-//Adicione a sua conversão aqui
-void menu(){
+// Adicione a sua conversão aqui
+void menu()
+{
     printf("\n\n\tEscolha a conversão: \n");
     printf("1 - Velocidade \n");
     printf("2 - Temperatura \n");
     printf("3 - Comprimento \n");
     printf("4 - Volume \n");
-    printf("5 - Massa \n"); 
+    printf("5 - Massa \n");
     printf("6 - Área \n");
+    printf("99 - [mm para pol]\n");
     printf("0 - Para Sair \n\n");
 }
-//Este é apenas um modelo, segestões para melhorias podem ser feitas na parte issues no Github
+// Este é apenas um modelo, segestões para melhorias podem ser feitas na parte issues no Github

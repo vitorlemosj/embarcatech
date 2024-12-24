@@ -1,4 +1,8 @@
-﻿# embarcatech
+﻿## Adições Extras
+
+Adicionei um conversor de milimetros para polegadas, para o auxílio das conversões em tubulação de pvc em bombas hidráulicas e valvulas solenoides.
+
+# embarcatech
 
 ## Descrição
 
@@ -21,3 +25,5 @@ Ao iniciar o executável escolha qual a grandeza física, e depois a sua unidade
 ## Para os membros do Subgrupo 3:
 
 Desenvolver os códigos restantes (seguindo o modelo da main) em branches (e modifique o readme com o pronto na descrição com suas alterações) para depois integrar ao ramo main/principal. Pode-se utilizar a seção de "Issues" da pagina do Github para discutir qualquer: correções, mudanças ou sugestões.
+
+

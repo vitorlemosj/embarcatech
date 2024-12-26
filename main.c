@@ -53,7 +53,7 @@ int main() {
                 printf("Executado com sucesso.\n\n");
                 break;
             case 7:
-                tempo();
+                converterTempo();
                 printf("Executado com sucesso.\n\n");
                 break;
             case 0:

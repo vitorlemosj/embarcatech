@@ -48,7 +48,3 @@ void converterTempo(){
     }
 }
 
-int main(){
-    converterTempo();
-    return 0;
-}

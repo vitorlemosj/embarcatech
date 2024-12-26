@@ -11,11 +11,7 @@
 #include "features/tempo/TEMPO.C"
 #include "features/area/area.c"
 
-//Inicie as funções aqui
-void tempo();
-void temp();
-void vel();
-void comp();
+//Menu
 void menu();
 int seletor();
 

@@ -2,6 +2,8 @@
 #include<stdlib.h>
 
 
+
+
 void converterTempo(double valor, int de, int para){
     double segundos;
 

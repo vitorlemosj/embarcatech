@@ -8,8 +8,9 @@
 #include "features/comprimento/comprimento.c"
 #include "features/volume/volume.c"
 #include "features/massa/massa.c"
+#include "features/tempo/TEMPO.C"
 #include "features/area/area.c"
-#include "features/tempo/TEMPO.c"
+
 
 //Inicie as funções aqui
 void tempo();

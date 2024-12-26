@@ -9,9 +9,10 @@
 #include "features/volume/volume.c"
 #include "features/massa/massa.c"
 #include "features/area/area.c"
-
+#include "features/tempo/TEMPO.c"
 
 //Inicie as funções aqui
+void tempo();
 void temp();
 void vel();
 void comp();
@@ -61,7 +62,11 @@ int main()
         case 6:
             area();  
             printf("Executado com sucesso.\n\n");
-            break; 
+            break;
+        case 7:
+            tempo();  
+            printf("Executado com sucesso.\n\n");
+            break;  
         case 0:
             printf("Executado com sucesso.\n\n");
             return 0;
@@ -82,6 +87,7 @@ void menu(){
     printf("4 - Volume \n");
     printf("5 - Massa \n"); 
     printf("6 - Área \n");
+    printf("7 - Tempo \n");
     printf("0 - Para Sair \n\n");
 }
 //Este é apenas um modelo, segestões para melhorias podem ser feitas na parte issues no Github

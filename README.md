@@ -9,10 +9,8 @@ Este é um aplicativo de conversão de grandezas físicas, com objetivo avaliati
 3. Unidades de volume (litro, mililitro, metros cúbicos)                        *(Aguardando correção)*
 4. Unidades de temperatura (Celsius, Fahrenheit, Kelvin)                             **(Pronto)**
 5. Unidades de velocidade (km/h, m/s, mph)                                           **(Pronto)**
-6. Watts (W), quilowatts (kW), cavalos-vapor (cv ou hp)                         (Em desenvolvimento)
-7. Unidades de área (metro quadrado, centímetro quadrado)                            **(Pronto)**
-8. Unidades de tempo (segundos, minutos, horas)                                      **(Pronto)**
-9. Bits, bytes, kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB)  (Em desenvolvimento)
+6. Unidades de área (metro quadrado, centímetro quadrado)                            **(Pronto)**
+7. Unidades de tempo (segundos, minutos, horas)                                      **(Pronto)**
 
 ## Instruções de Uso
 

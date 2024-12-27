@@ -11,6 +11,7 @@ Este é um aplicativo de conversão de grandezas físicas, com objetivo avaliati
 5. Unidades de velocidade (km/h, m/s, mph)                                           **(Pronto)**
 6. Unidades de área (metro quadrado, centímetro quadrado)                            **(Pronto)**
 7. Unidades de tempo (segundos, minutos, horas)                                      **(Pronto)**
+8. Bits, bytes, kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB)       **(Pronto)**
 
 ## Instruções de Uso
 
